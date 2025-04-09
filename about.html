@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós</title>
+  <style>
+    /* Reset de estilos padrões */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #1e2a3a;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      letter-spacing: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    /* Seção Sobre */
+    .about-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-text {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      margin-right: 40px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-text:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-text h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #1e2a3a;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .about-img {
+      flex: 1;
+      max-width: 400px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .about-img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #1e2a3a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      .about-text {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      .about-img {
+        max-width: 100%;
+      }
+
+      header h1 {
+        font-size: 36px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sobre Nós</h1>
+    <p>Descubra mais sobre nossa missão e valores</p>
+  </header>
+
+  <!-- Seção principal "Sobre Nós" -->
+  <section class="about-container">
+    <!-- Texto -->
+    <div class="about-text">
+      <h2>Quem Somos</h2>
+      <p>Somos um grupo de pessoas dedicadas à disseminação da fé e dos ensinamentos cristãos, com foco na Paixão de Cristo. Acreditamos que a reflexão sobre o sofrimento e o sacrifício de Cristo é uma chave para transformar nossas vidas e vivenciar o amor de Deus de maneira mais profunda.</p>
+      <p>Nosso objetivo é criar um espaço de acolhimento, aprendizado e crescimento espiritual para todos que desejam se aprofundar nos valores cristãos e na importância da Paixão de Cristo em nosso cotidiano.</p>
+    </div>
+
+    <!-- Imagem -->
+    <div class="about-img">
+      <img src="img2.png" alt="Imagem sobre nós">
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Paixão de Cristo. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
