@@ -1,11 +1,51 @@
 @import url(slider.css);
 @import url(menu.css);
+@import url(patrocinio.css);
 body {
     background: url('img/fundo.jpg') no-repeat center center;
     background-size: cover;
     min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
   }
+
+/* Correção para evitar sobreposição com a seção sobre nós */
+.about-us {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    margin-top: 50px; /* Garante que haja um bom espaçamento entre o slider e a seção abaixo */
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.about-us p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: -15px;
+    margin-bottom: 5rem;
+}
+
+.about-us .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-us img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us .text-content {
+    max-width: 500px;
+}
