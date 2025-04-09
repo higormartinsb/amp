@@ -1,0 +1,66 @@
+/* Estilo base */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 1100px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .btn-warning {
+    font-weight: bold;
+  }
+  
+  .slider-bg {
+    background: url('img/img.png') no-repeat center center;
+    background-size: cover;
+    padding: 100px 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Wrapper dos soldados */
+  .soldados-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .soldados-wrapper img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  /* Responsivo - Desktop */
+  @media (min-width: 968px) {
+    .content-box {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-align: start;
+    }
+  
+    .text-content {
+      max-width: 600px;
+    }
+  
+    .soldados-wrapper {
+      justify-content: flex-end;
+    }
+  
+    .soldados-wrapper img {
+      max-width: 190px;
+    }
+  }
+  
