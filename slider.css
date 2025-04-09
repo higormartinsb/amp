@@ -20,12 +20,13 @@
   }
   
   .slider-bg {
-    background: url('img/img.png') no-repeat center center;
+    background: url('img/banner.png') no-repeat center center;
     background-size: cover;
     padding: 100px 15px;
     display: flex;
     justify-content: center;
     width: 100%;
+    min-height: 100vh; /* deixa ele ocupar toda a altura da tela */
   }
   
   /* Wrapper dos soldados */
@@ -63,4 +64,12 @@
       max-width: 190px;
     }
   }
+
+  @media (max-width: 968px) {
+    .slider-bg {
+        background-size: 100vw 100%;
+    }
+  }
+
+
   
