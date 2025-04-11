@@ -1,0 +1,65 @@
+.depoimentos-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.titulo-depoimento {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #1e2a3a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.depoimento-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.depoimento-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.depoimento-card blockquote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.depoimento-card .nome {
+  font-weight: 600;
+  color: #333;
+}
+
+.depoimento-card .nome span {
+  display: block;
+  font-weight: normal;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Swiper seta customizada */
+.depoimentos-swiper .swiper-button-next,
+.depoimentos-swiper .swiper-button-prev {
+  color: #1e2a3a;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.depoimentos-swiper .swiper-button-next:hover,
+.depoimentos-swiper .swiper-button-prev:hover {
+  background-color: #ffd700;
+}

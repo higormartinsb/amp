@@ -86,6 +86,63 @@
     </div>
   </section>
 
+<!-- Ajuda pix -->
+<section class="chamada-voluntario">
+  <div class="voluntario-content">
+    <h3>Ajude a manter viva a fé!</h3>
+    <p>Seja um voluntário, ajude com figurino, montagem de palco ou contribua financeiramente para que esse espetáculo continue emocionando vidas.</p>
+    <a class="btn btn-warning btn-lg mt-3" href="#formulario">Quero Ajudar</a>
+  </div>
+</section>
+
+<!-- Depoimentos -->
+  <section class="depoimentos-section">
+    <h3 class="titulo-depoimento">O que dizem sobre o espetáculo</h3>
+    <div class="swiper depoimentos-swiper">
+      <div class="swiper-wrapper">
+        <!-- Depoimento 1 -->
+        <div class="swiper-slide">
+          <div class="depoimento-card">
+            <img src="img/img2.png" alt="Maria Souza">
+            <blockquote>"Foi emocionante, chorei do início ao fim. Inesquecível!"</blockquote>
+            <p class="nome">Maria Souza <span>– Espectadora</span></p>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="swiper-slide">
+          <div class="depoimento-card">
+            <img src="img/img.png" alt="João Paulo">
+            <blockquote>"Participei pela primeira vez. Uma experiência que me tocou profundamente."</blockquote>
+            <p class="nome">João Paulo <span>– Voluntário</span></p>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="swiper-slide">
+          <div class="depoimento-card">
+            <img src="img/img3.png" alt="Ana Silva">
+            <blockquote>"Fiquei maravilhada com a encenação. Todos devem ver!"</blockquote>
+            <p class="nome">Ana Silva <span>– Espectadora</span></p>
+          </div>
+        </div>
+
+        <!-- Depoimento 4 -->
+        <div class="swiper-slide">
+          <div class="depoimento-card">
+            <img src="img/img4.png" alt="Carlos Santos">
+            <blockquote>"Foi uma experiência transformadora. Me fez refletir muito."</blockquote>
+            <p class="nome">Carlos Santos <span>– Voluntário</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navegação -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
   <!-- Patrocinadores com Carrossel -->
   <section class="patrocinio-section">
     <h3 class="titulo-patrocinio">Nossos Patrocinadores</h3>
@@ -135,8 +192,8 @@
   
   <script src="script.js"></script>
 
-  <script>
-    const swiper = new Swiper('.patrocinio-swiper', {
+    <script>
+    const swiperPatrocinio = new Swiper('.patrocinio-swiper', {
       loop: true,
       spaceBetween: 30,
       slidesPerView: 2,
@@ -164,16 +221,35 @@
         },
       },
     });
-  </script>
 
-  <!-- AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
+    const swiperDepoimentos = new Swiper('.depoimentos-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+      },
+      spaceBetween: 30,
+      slidesPerView: 1,  // Exibe 1 slide por vez em telas pequenas
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,  // Exibe 2 slides a partir de 640px
+        },
+        768: {
+          slidesPerView: 3,  // Exibe 3 slides a partir de 768px
+        },
+        1024: {
+          slidesPerView: 4,  // Exibe 4 slides a partir de 1024px
+        },
+      }
+    });
+
     AOS.init({
       duration: 1000, // duração da animação
       once: true      // anima apenas uma vez
     });
   </script>
-
 </body>
 </html>

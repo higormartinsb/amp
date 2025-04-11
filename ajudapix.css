@@ -1,0 +1,26 @@
+.chamada-voluntario {
+  background: linear-gradient(135deg, #1e2a3a, #394b61);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voluntario-content {
+  max-width: 700px;
+}
+
+.voluntario-content h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.voluntario-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd;
+}

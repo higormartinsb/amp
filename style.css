@@ -1,6 +1,8 @@
 @import url(slider.css);
 @import url(menu.css);
 @import url(patrocinio.css);
+@import url(depoimentos.css);
+@import url(ajudapix.css);
 body {
     background: url('img/fundo.jpg') no-repeat center center;
     background-size: cover;
