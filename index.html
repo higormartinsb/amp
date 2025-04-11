@@ -6,8 +6,13 @@
   <title>Paixão de Cristo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-  </style>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
    <!-- MOBILE HEADER -->
@@ -41,9 +46,9 @@
       <a href="#" class="nav-link d-inline-block">Contato</a>
     </div>
   </div>
-<!--Slider-->
+
   <!-- SLIDER COM IMAGEM DE FUNDO -->
-<div class="slider-bg">
+  <div class="slider-bg">
     <div class="content-box">
       <div class="text-content text-center text-md-start">
         <h1 class="mb-3">Não foi o prego... foi o <strong>AMOR</strong></h1>
@@ -58,52 +63,117 @@
         <img src="img/img2.png" class="img-fluid" alt="Soldado 1">
         <img src="img/img2.png" class="img-fluid" alt="Soldado 2">
       </div>      
-           
     </div>
   </div>
  
- <!-- CONTAINER "SOBRE NÓS" -->
-  <div class="about-us">
-    <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>"A Paixão de Cristo: Viva a emoção, a fé e a tradição de São Gabriel da Palha!"</p>
-      <div class="content-wrapper">
-        <div class="text-content">
-          <p>A Paixão de Cristo em São Gabriel da Palha é um espetáculo que vai além do religioso – é uma verdadeira celebração de fé, amor e união. A cada ano, o evento atrai mais pessoas, comovendo corações e tocando almas, como um testemunho vivo da força do amor divino e do sacrifício.
-
-Com cenas emocionantes e uma produção grandiosa, este espetáculo reúne famílias, amigos e turistas em uma experiência única. É impossível não se envolver com a energia contagiante que toma conta da cidade, onde cada ato, cada música e cada gesto são um tributo à Paixão de Cristo !</p>
-        </div>
-        <img src="img/img2.png" alt="Sobre nós - Foto do evento">
-      </div>
-    </div>
+  <!-- CONTAINER "SOBRE NÓS" -->
+  <div class="about-titulo">
+    <h1>Sobre Nós</h1>
+    <p>Descubra mais sobre nossa missão e valores</p>
   </div>
 
- <!--Patrocicnio-->
-<h3>Realizações</h3>
-<div class="realizacoes-container">
-    <div class="realizacao">
-        <img src="img/sansil.png" alt="Patrocinador 1" class="logo">
-        <p class="nome-patrocinador">Sansil Tintas</p>
+  <section class="about-container">
+    <!-- Texto -->
+    <div class="about-text">
+      <h2>Quem Somos</h2>
+      <p>Somos um grupo de pessoas dedicadas à disseminação da fé e dos ensinamentos cristãos, com foco na Paixão de Cristo. Acreditamos que a reflexão sobre o sofrimento e o sacrifício de Cristo é uma chave para transformar nossas vidas e vivenciar o amor de Deus de maneira mais profunda.</p>
+      <p>Nosso objetivo é criar um espaço de acolhimento, aprendizado e crescimento espiritual para todos que desejam se aprofundar nos valores cristãos e na importância da Paixão de Cristo em nosso cotidiano.</p>
     </div>
-     <div class="realizacao">
-        <img src="img/farmacia.png" alt="Patrocinador 1" class="logo">
-        <p class="nome-patrocinador">Farmacia do Trabalhador</p>
-    </div>
-    <div class="realizacao">
-        <img src="img/sgp.png" alt="Patrocinador 1" class="logo">
-        <p class="nome-patrocinador">Prefeitura</p>
-    </div>
-    <div class="realizacao">
-        <img src="img/sicoob.png" alt="Patrocinador 2" class="logo">
-        <p class="nome-patrocinador">Sicoob</p>
-    </div>
-    <div class="realizacao">
-        <img src="img/padaria.png" alt="Patrocinador 3" class="logo">
-        <p class="nome-patrocinador">Padaria La Doçura</p>
-    </div>
-</div>
 
+    <!-- Imagem -->
+    <div class="about-img">
+      <img src="img/img2.png" alt="Imagem sobre nós" />
+    </div>
+  </section>
+
+  <!-- Patrocinadores com Carrossel -->
+  <section class="patrocinio-section">
+    <h3 class="titulo-patrocinio">Nossos Patrocinadores</h3>
+
+    <!-- Swiper container -->
+    <div class="swiper patrocinio-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="realizacao">
+            <img src="img/sansil.png" alt="Sansil Tintas" class="logo" />
+            <p class="nome-patrocinador">Sansil Tintas</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="realizacao">
+            <img src="img/farmacia.png" alt="Farmácia do Trabalhador" class="logo" />
+            <p class="nome-patrocinador">Farmácia do Trabalhador</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="realizacao">
+            <img src="img/sgp.png" alt="Prefeitura" class="logo" />
+            <p class="nome-patrocinador">Prefeitura</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="realizacao">
+            <img src="img/sicoob.png" alt="Sicoob" class="logo" />
+            <p class="nome-patrocinador">Sicoob</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="realizacao">
+            <img src="img/padaria.png" alt="Padaria La Doçura" class="logo" />
+            <p class="nome-patrocinador">Padaria La Doçura</p>
+          </div>
+        </div>
+      </div>
+      <!-- Setas de navegação -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Paginador -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
   
-<script src="script.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    const swiper = new Swiper('.patrocinio-swiper', {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 2,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
+    });
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // duração da animação
+      once: true      // anima apenas uma vez
+    });
+  </script>
+
 </body>
 </html>
