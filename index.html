@@ -104,7 +104,7 @@
         <div class="swiper-slide">
           <div class="depoimento-card">
             <img src="img/img2.png" alt="Maria Souza">
-            <blockquote>"Foi emocionante, chorei do início ao fim. Inesquecível!"</blockquote>
+            <blockquote>"Foi emocionante, chorei do início ao fim. Inesquecível! Espetacular de mais da conta!"</blockquote>
             <p class="nome">Maria Souza <span>– Espectadora</span></p>
           </div>
         </div>
@@ -122,7 +122,7 @@
         <div class="swiper-slide">
           <div class="depoimento-card">
             <img src="img/img3.png" alt="Ana Silva">
-            <blockquote>"Fiquei maravilhada com a encenação. Todos devem ver!"</blockquote>
+            <blockquote>"Fiquei maravilhada com a encenação. Todos devem ver! nao percam"</blockquote>
             <p class="nome">Ana Silva <span>– Espectadora</span></p>
           </div>
         </div>
@@ -131,7 +131,7 @@
         <div class="swiper-slide">
           <div class="depoimento-card">
             <img src="img/img4.png" alt="Carlos Santos">
-            <blockquote>"Foi uma experiência transformadora. Me fez refletir muito."</blockquote>
+            <blockquote>"Foi uma experiência transformadora. Me fez refletir muito mais muito mesmo."</blockquote>
             <p class="nome">Carlos Santos <span>– Voluntário</span></p>
           </div>
         </div>
@@ -245,6 +245,13 @@
         },
       }
     });
+
+      document.querySelectorAll('.depoimento-card blockquote').forEach(blockquote => {
+  const maxLength = 200; // Limite de caracteres
+  if (blockquote.textContent.length > maxLength) {
+    blockquote.textContent = blockquote.textContent.substring(0, maxLength) + '...'; // Adiciona '...' no final
+  }
+});
 
     AOS.init({
       duration: 1000, // duração da animação
