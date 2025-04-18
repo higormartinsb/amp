@@ -1,0 +1,35 @@
+.voluntario-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.chamada-voluntario {
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+}
+
+/* imagem personalizada para cada card */
+.card1 {
+  background-image: url('img/teste2.png');
+}
+
+.card2 {
+  background-image: url('img/teste3.png');
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+  .chamada-voluntario {
+    width: 100%;
+  }
+}

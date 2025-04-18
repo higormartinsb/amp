@@ -1,0 +1,82 @@
+/* Estilo base */
+.content-box {
+ 
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 auto; /* garante centralização horizontal */
+}
+  
+  .btn-warning {
+    font-weight: bold;
+    background: linear-gradient(135deg, #1f3344, #517388);
+    color: white;
+    border: none;
+  }
+
+  .btn:hover {
+    background: white;
+  }
+  
+  /* Slider */
+.slider-bg {
+  background: linear-gradient(135deg, #2d4f6c, #8cbfdf);
+  padding: 80px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* opcional: deixa a altura da tela toda */
+  text-align: center;
+}
+ /* Wrapper dos soldados */
+.soldados-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.soldados-wrapper img {
+    max-width: 120px;
+    height: auto;
+}
+  
+  /* Responsivo - Desktop */
+@media (min-width: 968px) {
+    .content-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    .text-content {
+        max-width: 50%;
+    }
+
+    .soldados-wrapper {
+        justify-content: flex-end;
+    }
+
+    .soldados-wrapper img {
+        max-width: 390px;
+    }
+}
+
+@media (max-width: 968px) {
+    .slider-bg {
+        background-size: 100vw 100%;
+    }
+}
+
+
+  

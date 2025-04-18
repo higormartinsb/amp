@@ -1,0 +1,29 @@
+@import url(slider.css);
+@import url(menu.css);
+@import url(patrocinio.css);
+@import url(depoimentos.css);
+@import url(ajudapix.css);
+@import url(about.css);
+
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+}
+.faixa-cipo {
+  height: 80px; /* ou outro tamanho */
+  background-image: url('img/cipo.png'); /* sua imagem do cipó */
+  background-repeat: repeat-x; /* repete na horizontal */
+  background-position: center;
+  background-size: auto 100%; /* mantém altura e repete horizontalmente */
+  max-width: 100%;
+  margin-top: -20px;
+}
+
+     

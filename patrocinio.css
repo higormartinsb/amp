@@ -1,0 +1,103 @@
+    /* Estilos para os patrocinadores */
+    .patrocinio-section {
+      padding: 60px 20px;
+      background-color: #f4f6f9;
+      text-align: center;
+    }
+
+    .titulo-patrocinio {
+      font-size: 32px;
+      color: #1e2a3a;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .patrocinio-swiper {
+      width: 100%;
+      max-width: 1100px;
+      padding: 20px 0;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .realizacao {
+      width: 160px;
+      height: 200px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .realizacao:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nome-patrocinador {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+      max-width: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* Responsivo: mobile - ocupa 100% da largura e reduz altura */
+    @media (max-width: 576px) {
+      .realizacao {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+      }
+    }
+
+    /* Swiper Navigation Arrows Custom Style */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #1e2a3a;
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background-color: #ffd700;
+      color: #1e2a3a;
+    }
+
+    /* Pagination Styling */
+    .swiper-pagination-bullet {
+      background: #ccc;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #1e2a3a;
+    }
